@@ -8,28 +8,38 @@
 </head>
 
 <body>
-    <form action="https://www.amazon.com" method="get">
+    <!-- This Action attribute is used to directly lincked with the anethor website using (get Method ) this method is used to appiaring on URL place  Eg:  https://www.amazon.com/?name=dnndkvd&email=sheelamnageshnani%40gmail.com&password=363553&number=2020&file=%23wallpaper.jpg&gender=Male&city=Hyderabad-->
+    <!-- And Action attribute is used to directly linked with the anethor website using(post method) this method is used to hide the what ever you enter input thot not show on the Url   Eg:https://www.amazon.com/-->
+    <form action="https://www.amazon.com" method="post">
         <fieldset>
             <legend><b><i>Login Form📝</i></b></legend><br><br>
+            <!-- The Autofocus is used to blinck the curser will blinck that particular block -->
+
+            <!-- This minlenght and maxlength is used to repasent the enter the character with in the block only not enter the out of the range -->
             <label for="name"><b>Name:</b></label>
-            <input type="text" id="name" placeholder="Enter Name" name="name"><br><br>
+            <input type="text" id="name" placeholder="Enter Name" name="name" autofocus minlength="3" maxlength="30"><br><br>
+
+            <!-- This required attribute is used to tell the this form is must be fill it  -->
             <label for="email"><b>Email:</b></label>
-            <input type="email" id="email" placeholder="Enter Email" name="email">
+            <input type="email" id="email" placeholder="Enter Email" name="email" required>
             <br><br>
+            <!--This min and max is used to reprasent the lengths of an numbers to must be enter the numbers with in the range only not enter out side of range  -->
             <label for="password"><b>Password:</b></label>
-            <input type="password" placeholder="Enter password" name="password">
+            <input type="password" placeholder="Enter password" name="password" min="4" max="12">
             <br><br>
-            <label>number</label>
+            <!-- The step is used to skip the values , to enter values with in the block only -->
+            <label><b>number:</b></label>
             <input type="number" name="number" min="2010" max="2030" step="2">
             <br><br>
             <!-- This (MUltiple ) attribute is used to add multiple files in a input field -->
             <!-- This (Accept) Attribute is used to give restrictions
              to the input field  ex=.jpg,.png.txt-->
-            <label>file</label>
+            <label><b>file:</b></label>
             <input type="file" name="file" multiple accept=".jpg"><br><br>
 
             <!-- This (readonly) attribute is used for only reading perpose not for deleting and adding text -->
-            <input type="text" value="Hi this is Nagesh" readonly><br><br>
+            <label for=""><b>Readme</b>:</label>
+            <input type="text" value="Hi this is Nagesh ,How can i help you" readonly><br><br>
             <label><b>Gender:</b></label><br><br>
 
             <input type="radio" name="gender" value="Male" checked>Male <br><br>
@@ -41,14 +51,14 @@
             <input type="checkbox" value="Html" checked>HTML <br><br>
             <input type="checkbox" value="CSS">CSS <br><br>
             <input type="checkbox" value="JavaScript">JavaScript <br><br>
-            <!-- the text will appiard but no clickabled that time we should use disabled -->
+            <!-- the text will appieard ,but not clickabled that time we should use disabled -->
             <input type="checkbox" value="PHP" disabled>PHP
             <br><br>
 
             <label for="palces"><b> Select City:</b></label><br><br>
             <select name="city" id="places">
                 <option value="hidden">--Choose The city--</option>
-                <!-- Selected opction adding in this field -->
+                <!-- Selected opction adding in this field ,It is used to Appiaring on the text area  -->
                 <option value="Hyderabad" selected>Hyderabad</option>
                 <option value="Chennai"> Chennai</option>
                 <option value="Bengalor">Bengalor</option>
