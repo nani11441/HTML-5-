@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form>
+    <form action="https://www.amazon.com" method="get">
         <fieldset>
             <legend><b><i>Login Form📝</i></b></legend><br><br>
             <label for="name"><b>Name:</b></label>
@@ -19,23 +19,37 @@
             <label for="password"><b>Password:</b></label>
             <input type="password" placeholder="Enter password" name="password">
             <br><br>
+            <label>number</label>
+            <input type="number" name="number" min="2010" max="2030" step="2">
+            <br><br>
+            <!-- This (MUltiple ) attribute is used to add multiple files in a input field -->
+            <!-- This (Accept) Attribute is used to give restrictions
+             to the input field  ex=.jpg,.png.txt-->
+            <label>file</label>
+            <input type="file" name="file" multiple accept=".jpg"><br><br>
+
+            <!-- This (readonly) attribute is used for only reading perpose not for deleting and adding text -->
+            <input type="text" value="Hi this is Nagesh" readonly><br><br>
             <label><b>Gender:</b></label><br><br>
 
-            <input type="radio" name="gender" value="Male">Male <br><br>
+            <input type="radio" name="gender" value="Male" checked>Male <br><br>
             <input type="radio" name="gender" value="Female">Female <br><br>
             <input type="radio" name="gender" value="Others">Others
             <br><br>
+            <!-- checked will be added in this field  is -->
             <lable><b>Technologys:</b></lable><br><br>
-            <input type="checkbox" value="Html">HTML <br><br>
+            <input type="checkbox" value="Html" checked>HTML <br><br>
             <input type="checkbox" value="CSS">CSS <br><br>
             <input type="checkbox" value="JavaScript">JavaScript <br><br>
-            <input type="checkbox" value="PHP">PHP
+            <!-- the text will appiard but no clickabled that time we should use disabled -->
+            <input type="checkbox" value="PHP" disabled>PHP
             <br><br>
 
             <label for="palces"><b> Select City:</b></label><br><br>
             <select name="city" id="places">
                 <option value="hidden">--Choose The city--</option>
-                <option value="Hyderabad">Hyderabad</option>
+                <!-- Selected opction adding in this field -->
+                <option value="Hyderabad" selected>Hyderabad</option>
                 <option value="Chennai"> Chennai</option>
                 <option value="Bengalor">Bengalor</option>
                 <option value="Mumbai">Mumbai</option>
