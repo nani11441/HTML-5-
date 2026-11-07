@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Learning Portal</title>
+</head>
+
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <h1>Welcome to Student Learning Portal</h1>
+        <p>Learn HTML5, Java, Python and Web Development</p>
+
+
+        <nav> <a href="#home">Home</a> |
+            <a href="#courses">Courses</a> |
+            <a href="#gallery">Gallery</a> |
+            <a href="#media">Media</a> |
+            <a href="#registration">Registration</a> |
+            <a href="#contact">Contact</a></nav>
+
+    </header>
+
+    <hr>
+    <!-- MAIN SECTION -->
+
+    <main>
+
+        <!-- HOME SECTION -->
+        <section id="home">
+            <h2>About Our Learning Portal</h2>
+
+            <p>
+                Our Student Learning Portal provides online education for students. Students can learn programming languages and improve their technical skills.
+            </p>
+
+            <p>
+                We provide <strong>quality education</strong>,
+                <em>practical knowledge</em> and
+                <mark>real-time projects</mark>.
+            </p>
+
+            <h3>1.Our Learning Features</h3>
+
+            <ul>
+                <li>Experienced Trainers</li>
+                <li>Practical Classes</li>
+                <li>Online Training</li>
+                <li>Interview Preparation</li>
+            </ul>
+
+            <h3>2.Learning Process</h3>
+
+            <ol type="A">
+                <li>Learn Basic Concepts</li>
+                <li>Practice Programs</li>
+                <li>Build Projects</li>
+                <li>Prepare for Interviews</li>
+            </ol>
+
+            <h3>3.Our Courses and Topics</h3>
+
+            <ul style="color:green;">
+                <li>Frontend Development
+                    <ol>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                    </ol>
+                </li>
+
+                <li>Backend Development
+                    <ol>
+                        <li>Core Java</li>
+                        <li>Spring Boot</li>
+                        <li>SQL</li>
+                    </ol>
+                </li>
+
+                <li>Database
+                    <ol>
+                        <li>Oracle SQL</li>
+                        <li>MySQL</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+        <hr>
+
+        <!-- IMAGE SECTION -->
+        <section id="gallery">
+            <h2>Our Learning Gallery</h2>
+
+            <figure>
+                <img src="image/student.jpg" alt="Student learning programming" width="300" height="200">
+
+                <figcaption>Students learning programming</figcaption>
+            </figure>
+
+            <figure>
+                <img src="image/ClasssRoom.jpg" alt="Students in classroom" width="300" height="200">
+
+                <figcaption>Our classroom training</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <!-- TABLE SECTION -->
+        <section id="courses">
+            <h2> Our Course Details</h2>
+
+            <table border="1" cellpadding="15" rules="all">
+                <caption><b>Available Training Courses🧾</b></caption>
+
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Course Name</th>
+                        <th>Duration</th>
+                        <th>Fee</th>
+                        <th>Mode</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>HTML5</td>
+                        <td>15 Days</td>
+                        <td>₹2,000</td>
+                        <td>Online</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Java</td>
+                        <td>60 Days</td>
+                        <td>₹5,000</td>
+                        <td>Offline</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>SQL</td>
+                        <td>30 Days</td>
+                        <td>₹3,000</td>
+                        <td>Online</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Full Stack</td>
+                        <td>180 Days</td>
+                        <td>₹15,000</td>
+                        <td>Offline</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="5" align="center">
+                            <b> Admissions are open for all courses.</b>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- AUDIO AND VIDEO SECTION -->
+        <section id="media">
+            <h2>Learning Audio</h2>
+
+            <p>Listen to our welcome audio:</p>
+
+            <audio controls>
+                <source src="audio/welcome.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+
+            <h2>Learning Video</h2>
+
+            <p>Watch our HTML learning video:</p>
+
+            <video width="400" height="250" controls poster="image/classsRoom.jpg">
+                <source src="./Image/YemiCheyamanduve.mp4" type="video/mp4" >
+                Your browser does not support video.
+            </video>
+        </section>
+
+        <hr>
+
+        <!-- IFRAME SECTION -->
+        <section>
+            <h2>Online Learning Through Iframe</h2>
+
+            <p>Watch an embedded educational video:</p>
+
+            <iframe width="450" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Embedded learning video" allowfullscreen>
+            </iframe>
+
+            <h3>Visit HTML Learning Website</h3>
+
+            <iframe src="https://www.w3schools.com" width="450" height="250" title="W3Schools learning website">
+            </iframe>
+        </section>
+
+        <hr>
+
+        <!-- REGISTRATION FORM -->
+        <section id="registration">
+            <h2>Student Registration Form</h2>
+
+            <form action="#" method="get">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+
+                <label for="phone">Mobile Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter mobile number" maxlength="10">
+                <br><br>
+
+                <label>Gender:</label>
+
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <br><br>
+
+                <label>Skills:</label>
+
+                <input type="checkbox" id="html" name="skills" value="HTML">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" id="java" name="skills" value="Java">
+                <label for="java">Java</label>
+
+                <input type="checkbox" id="sql" name="skills" value="SQL">
+                <label for="sql">SQL</label>
+
+                <br><br>
+
+                <label for="course">Select Course:</label>
+
+                <select id="course" name="course">
+                    <option value="">Choose Course</option>
+                    <option value="HTML">HTML5</option>
+                    <option value="Java">Java</option>
+                    <option value="SQL">SQL</option>
+                    <option value="Full Stack">Full Stack</option>
+                </select>
+
+                <br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+
+                <br><br>
+
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume">
+
+                <br><br>
+
+                <label for="message">Address:</label>
+                <br>
+                <textarea id="message" name="address" rows="4" cols="35" placeholder="Enter your address"></textarea>
+
+                <br><br>
+
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I agree to the terms and conditions</label>
+
+                <br><br>
+
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- FOOTER SECTION -->
+    <footer id="contact">
+        <h2>Contact Us</h2>
+
+        <p>Email: studentportal@gmail.com</p>
+        <p>Phone: 0876543210</p>
+
+        <p>
+            <a href="#home">Back to Top</a>
+        </p>
+
+        <p align="center">
+            <b> &copy; 2026 Student Learning Portal. All Rights Reserved.</b>
+        </p>
+    </footer>
+
+</body>
+
+</html>
