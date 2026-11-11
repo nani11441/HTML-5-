@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<!--HTML Lists
+Last Updated : 17 Mar 2025
+HTML lists constitute a fundamental building block that is employed to arrange similar items on a web page in an orderly and visually attractive form.
+Lists enhance readability, accessibility and content organization. There are three major types of lists supported by HTML:
+
+*   Ordered List (<ol>) - Items in a list that are listed in order of numbers or letters.
+*   Unordered List (<ul>) - Bulleted items which do not have a natural ordering.
+*   Description List (<dl>) - Term-description association such as a glossary or dictionary.
+Lists in HTML may also be nested; that is, one list can be contained in another.
+
+1. HTML Ordered List (Numbered List)
+Syntax
+<ol>
+ <li>Aries</li>
+ <li>Bingo</li>
+ <li>Leo</li>
+ <li>Oracle</li>
+</ol>
+
+
+2. HTML Unordered List (Bulleted List)
+An unordered list is best used for items that do not require order. It starts with <ul> tag, and each list item is once more enclosed with <li> tag. The default marking of items is done in black bullet points. -->
+
+<body>
+    <h1>Nested List</h1>
+    <ul type="square">
+        <li>Food Items</li>
+        <ol type="1">
+            <li>Veg</li>
+
+            <ol type="a">
+                <li>Panner</li>
+                <ul type="disc">
+                    <li>Biryani</li>
+                    <li> Panner 65</li>
+                </ul>
+            </ol>
+            <li>Non veg</li>
+            <ol type="a">
+                <li>Chicken</li>
+                <ul type="disc">
+                    <li>Biryani</li>
+                    <li>65</li>
+                </ul>
+            </ol>
+
+    </ul>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JavaScript</dt>
+        <dd>Programming Language used to make webpages interactive.</dd>
+    </dl>
+
+
+</body>
+
+</html>

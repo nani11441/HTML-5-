@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fieldset</title>
+    <style>
+        form {
+            font-family: Calibri, sans-serif;
+            background-color: rgb(104, 104, 81);
+            padding: 10px;
+            border-radius: 3%;
+            border-color: black;
+        }
+        
+        fieldset {
+            border: 5px rgb(27, 26, 25);
+            background-color: lightgoldenrodyellow;
+            border-radius: 3%;
+            margin: 10px;
+        }
+        
+        legend {
+            background-color: silver;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <lable for id="name">User name</lable>
+                <input type="text">
+
+                <label for id="number">Password</label>
+                <input type="password">
+            </fieldset>
+            <fieldset>
+                <legend>Education</legend>
+                <lable for id="name">College Name</lable>
+                <input type="text">
+                <lable for id="number">Passout year</lable>
+                <input type="month">
+            </fieldset>
+            <input type="submit" value="Enroll">
+            <input type="reset"> </form>
+    </div>
+</body>
+
+</html>
