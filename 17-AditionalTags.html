@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional tags</title>
+
+    <style>
+        .watermark {
+            position: relative;
+            text-align: center;
+            padding: 100px;
+        }
+        
+        .watermark::before {
+            content: "NAGESH";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            color: rgba(0, 0, 0, 0.1);
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- optional Tags -->
+    <label for="">Menu:</label>
+    <select name="" id="">
+        <option value=""hidden>--Choose your food--</option>
+        <optgroup label="Non-veg">
+            <option value="">Chicken Biryani</option>
+            <option value="">Mutton Biryani</option>
+            <option value="">Prawns Biryani</option>
+            <option value="">Fish Biryani</option>
+            <option value=""> NulliGosh Biryani</option>
+        </optgroup>
+        <optgroup label="Ved-Idems">
+            <option value="">Veg Biryani</option>
+            <option value="">veg pulao</option>
+            <option value=""> mixed Veg Biryani</option>
+            <option value=""> Paneer Biryani</option>
+        </optgroup>
+    </select>
+    <!-- This is detail and summary Tags -->
+    <details>
+        <summary>What is Java</summary>
+        <p>Java is a high-level, object-oriented programming language and software platform. It was created by James Gosling at Sun Microsystems and released in 1995, and it is now maintained by Oracle.</p>
+    </details>
+    <!-- This is Data
+     list Tag -->
+    <label for="">Places:</label>
+    <input type="text" list="places">
+    <datalist id="places">
+        <option value="Hyderabad"></option>
+        <option value="Chennai"></option>
+        <option value="Assam"> </option>
+        <option value="Nalgonda"></option>
+        <option value="Miryalaguda"></option>
+
+    </datalist>
+    <!-- figure and figcaption tags -->
+    <figure align="center">
+        <img src="https://t4.ftcdn.net/jpg/07/75/56/21/360_F_775562125_67MX9SMeQbEuteBXODJniw0gqQ4VNISq.jpg" alt="Hanuman" height="200" width="300">
+        <figcaption> Jai Shee Ram</figcaption>
+        <img src="https://i.pinimg.com/474x/ff/c4/5b/ffc45b8722f6f56ecbf236f4cc316c31.jpg" alt="Jai Hanuman" height="300" width="250">
+        <figcaption align="center">Jai Hanuman</figcaption>
+
+    </figure>
+
+    <!-- This is pre Tag -->
+    <pre>HI       how 
+        are 
+        you
+    </pre>
+
+    <!-- Prograss tag -->
+    <label for="">task completed:</label> <progress value="20" max="100">
+       
+    </progress>
+    <span>20% completed</span><br><br>
+    <label for="">Battery Percentage:</label> <meter value="10" min="0" max="100"></meter
+        >
+        <span> 10 % Charging Pettura Yadava</span>
+
+
+          <div class="watermark">
+        <h1>Welcome to My Website</h1>
+        <p>This is my HTML5 webpage.</p>
+    </div>
+
+</body>
+
+</html>
