@@ -23,6 +23,28 @@
             color: rgba(0, 0, 0, 0.1);
             z-index: -1;
         }
+        
+        .moving-text {
+            font-size: 40px;
+            color: blue;
+            text-align: center;
+            animation: moveUpDown 1s infinite alternate ease-in-out;
+        }
+        
+        @keyframes moveUpDown {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(70px);
+            }
+        }
+        
+        marquee {
+            font-size: 20px;
+            color: red;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -91,6 +113,13 @@
         <h1>Welcome to My Website</h1>
         <p>This is my HTML5 webpage.</p>
     </div>
+
+     <h1 class="moving-text">Welcome to Nagesh Website</h1>
+     <marquee direction="up">Moving Up</marquee>
+<marquee direction="down">Moving Down</marquee>
+<marquee direction="left">Moving Left</marquee>
+<marquee direction="right">Moving Right</marquee>
+
 
 </body>
 
